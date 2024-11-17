@@ -1,8 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
 #include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -78,5 +78,6 @@ void manacher(string fileName)
     }
     string largest_palindrome = s.substr(start_pos, end_pos - start_pos + 1);
 
-    cout << start_pos + 1 << ' ' << end_pos + 1 << ' ' << largest_palindrome << endl;
+    cout << start_pos + 1 << ' ' << end_pos + 1 << ' ' << largest_palindrome
+         << endl;
 }

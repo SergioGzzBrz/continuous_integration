@@ -1,8 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
 #include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -30,9 +30,7 @@ vector<int> ZAlg(string pattern, string fullText)
                     ZArr[i] = count;
                     l = i;
                     // R is inclusive
-                    r =
-                        count == 0 ? l
-                                   : i + count - 1;
+                    r = count == 0 ? l : i + count - 1;
                     break;
                 }
             }
@@ -62,9 +60,7 @@ vector<int> ZAlg(string pattern, string fullText)
                         ZArr[i] = count;
                         l = i;
                         // R is inclusive
-                        r =
-                            count == 0 ? l
-                                       : i + count - 1;
+                        r = count == 0 ? l : i + count - 1;
                         break;
                     }
                 }
