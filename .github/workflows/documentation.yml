@@ -7,6 +7,9 @@ on:
     branches: [ main, master ]
 
 jobs:
+  job-name:
+      permissions:
+        contents: write
   build:
     name: Build and publish documentation
     runs-on: ubuntu-latest
